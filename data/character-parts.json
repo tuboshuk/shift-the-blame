@@ -1,0 +1,83 @@
+{
+  "faces": [
+    { "id": "round", "name": "圆脸", "unlock": null },
+    { "id": "square", "name": "方圆脸", "unlock": null },
+    { "id": "sharp", "name": "小尖脸", "unlock": { "runs": 5 } }
+  ],
+  "eyes": [
+    { "id": "bean", "name": "豆豆眼", "unlock": null },
+    { "id": "star", "name": "星星眼", "unlock": { "runs": 3 } },
+    { "id": "sleepy", "name": "困困眼", "unlock": null },
+    { "id": "sharp", "name": "锐利眼", "unlock": { "runs": 10 } }
+  ],
+  "mouths": [
+    { "id": "smile", "name": "微笑", "unlock": null },
+    { "id": "open", "name": "张嘴", "unlock": null },
+    { "id": "flat", "name": "无语线", "unlock": { "runs": 3 } },
+    { "id": "cat", "name": "猫嘴", "unlock": { "runs": 8 } }
+  ],
+  "hairs": [
+    { "id": "short", "name": "短发", "unlock": null },
+    { "id": "ahoge", "name": "呆毛", "unlock": null },
+    { "id": "buns", "name": "双丸子", "unlock": { "runs": 5 } },
+    { "id": "cap", "name": "鸭舌帽", "unlock": { "distance": 800 } }
+  ],
+  "outfits": [
+    { "id": "hoodie", "name": "卫衣", "unlock": null },
+    { "id": "badge", "name": "工牌衫", "unlock": null },
+    { "id": "apron", "name": "店员围裙", "unlock": { "runs": 3 } },
+    { "id": "cape", "name": "小斗篷", "unlock": { "distance": 1200 } }
+  ],
+  "mainColors": [
+    { "id": "slate_blue", "hex": "#7d9bb5" },
+    { "id": "sage_green", "hex": "#88b09a" },
+    { "id": "warm_beige", "hex": "#d8c4a3" },
+    { "id": "muted_purple", "hex": "#a593c2" },
+    { "id": "brick_red", "hex": "#c98a7d" },
+    { "id": "charcoal", "hex": "#6b7280" }
+  ],
+  "accentColors": [
+    { "id": "mint", "hex": "#8fd8b0" },
+    { "id": "soft_yellow", "hex": "#e8c86a" },
+    { "id": "soft_cyan", "hex": "#6fb8d9" },
+    { "id": "coral", "hex": "#e0995e" },
+    { "id": "dull_magenta", "hex": "#c86aa8" },
+    { "id": "deep_green", "hex": "#5b8c72" }
+  ],
+  "charms": [
+    { "id": "none", "name": "无挂件", "unlock": null },
+    { "id": "badge", "name": "工牌", "unlock": null },
+    { "id": "scanner", "name": "扫码枪", "unlock": { "runs": 3 } },
+    { "id": "hamster", "name": "小仓鼠", "unlock": { "runs": 8 } },
+    { "id": "toast", "name": "面包片", "unlock": { "distance": 1500 } }
+  ],
+  "presets": [
+    {
+      "id": "programmer",
+      "name": "程序员预设",
+      "unlockRuns": 0,
+      "appearance": {
+        "face": "round", "eyes": "bean", "mouth": "smile", "hair": "ahoge",
+        "outfit": "hoodie", "mainColor": "charcoal", "accentColor": "mint", "charm": "badge"
+      }
+    },
+    {
+      "id": "store_clerk",
+      "name": "夜班店员预设",
+      "unlockRuns": 3,
+      "appearance": {
+        "face": "square", "eyes": "sleepy", "mouth": "flat", "hair": "cap",
+        "outfit": "apron", "mainColor": "warm_beige", "accentColor": "soft_yellow", "charm": "scanner"
+      }
+    },
+    {
+      "id": "hamster_pact",
+      "name": "仓鼠契约者预设",
+      "unlockRuns": 8,
+      "appearance": {
+        "face": "round", "eyes": "star", "mouth": "cat", "hair": "buns",
+        "outfit": "cape", "mainColor": "muted_purple", "accentColor": "soft_cyan", "charm": "hamster"
+      }
+    }
+  ]
+}

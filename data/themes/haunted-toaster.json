@@ -1,0 +1,30 @@
+{
+  "themeId": "haunted_toaster",
+  "displayName": "野生烤面包机世界",
+  "uiSkin": "dusk_purple",
+  "unlock": { "distance": 1600 },
+  "world": {
+    "scene": "超现实厨房、空间裂隙、说话家电、奇怪神殿",
+    "bgLayers": ["kitchen", "rift", "shrine"]
+  },
+  "palette": {
+    "bg0": "#171527",
+    "bg1": "#211d38",
+    "ground": "#262242",
+    "primary": "#6fb8d9",
+    "danger": "#c86aa8"
+  },
+  "obstaclePool": [
+    { "id": "flying_toast", "name": "飞行吐司", "needState": "smash", "score": 12, "glyph": "吐" },
+    { "id": "heat_wave", "name": "过热波纹", "needState": "phase", "score": 10, "glyph": "波" },
+    { "id": "breadcrumb_trap", "name": "时空面包屑", "needState": "dash", "score": 15, "glyph": "屑" },
+    { "id": "talking_socket", "name": "会说话的插座", "needState": "smash", "score": 13, "glyph": "电" }
+  ],
+  "banter": {
+    "runStart": ["现实分支已加载，请谨慎奔跑。", "烤面包机正在注视你。"],
+    "hit": ["你的存在产生了可疑分支。", "家电们发出了偷笑的电流声。"],
+    "milestone": ["时空还没追上你，继续。", "仓鼠在平行宇宙为你鼓掌。"],
+    "reward": ["裂隙张开，选一条命运。", "十秒内，宇宙不会催你。"],
+    "stage": ["新阶段，远景的裂纹又多了一道。"]
+  }
+}

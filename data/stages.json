@@ -1,0 +1,54 @@
+{
+  "decisionWindowMs": 10000,
+  "nodeDistances": [300, 700, 1200],
+  "loopStep": 500,
+  "loopSpeedGrowth": 1.03,
+  "loopSpawnFloorMs": 700,
+  "stages": [
+    {
+      "index": 1,
+      "fromDistance": 0,
+      "speedMul": 0.82,
+      "spawnIntervalMs": 1500,
+      "maxGroup": 1,
+      "comboChance": 0,
+      "fakeHint": false,
+      "rule": "新手段：障碍单独出现，放慢脚步熟悉三形态"
+    },
+    {
+      "index": 2,
+      "fromDistance": 300,
+      "speedMul": 0.95,
+      "spawnIntervalMs": 1250,
+      "maxGroup": 2,
+      "comboChance": 0.35,
+      "fakeHint": false,
+      "rule": "双障碍组合开始出现，提前规划切换顺序"
+    },
+    {
+      "index": 3,
+      "fromDistance": 700,
+      "speedMul": 1.05,
+      "spawnIntervalMs": 1000,
+      "maxGroup": 2,
+      "comboChance": 0.55,
+      "fakeHint": false,
+      "rule": "障碍密度提升，背景开始轻微变化"
+    },
+    {
+      "index": 4,
+      "fromDistance": 1200,
+      "speedMul": 1.15,
+      "spawnIntervalMs": 850,
+      "maxGroup": 3,
+      "comboChance": 0.7,
+      "fakeHint": true,
+      "rule": "三障碍组合与假提示出现，盯住门体颜色不要信文字"
+    }
+  ],
+  "nodeRewards": [
+    ["score_x2_20", "shield", "dash_cooldown"],
+    ["score_x3_15", "phase_plus_1s", "death_save"],
+    ["score_x5_risk", "slow_down", "smash_range"]
+  ]
+}

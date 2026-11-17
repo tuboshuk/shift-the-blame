@@ -1,0 +1,30 @@
+{
+  "themeId": "prod_incident",
+  "displayName": "发布事故世界",
+  "uiSkin": "calm_green",
+  "unlock": { "distance": 0 },
+  "world": {
+    "scene": "服务器机房、报错弹窗、告警红灯、日志洪流",
+    "bgLayers": ["server_rack", "error_rain", "alert_light"]
+  },
+  "palette": {
+    "bg0": "#0e1512",
+    "bg1": "#16201b",
+    "ground": "#1b2721",
+    "primary": "#8fd8b0",
+    "danger": "#d97777"
+  },
+  "obstaclePool": [
+    { "id": "error_wall", "name": "500错误墙", "needState": "phase", "score": 10, "glyph": "500" },
+    { "id": "script_blob", "name": "失控脚本", "needState": "smash", "score": 12, "glyph": "{;}" },
+    { "id": "fast_lane", "name": "部署传送门", "needState": "dash", "score": 15, "glyph": ">>" },
+    { "id": "crash_stream", "name": "崩溃请求流", "needState": "dash", "score": 11, "glyph": "REQ" }
+  ],
+  "banter": {
+    "runStart": ["告警归告警，先跑起来。", "今天的 P0，从脚下这一步开始。"],
+    "hit": ["这下真要写复盘了。", "告警群终于有素材了。"],
+    "milestone": ["居然还没挂，值得建个群庆祝。", "存活里程 +1，周报有得写了。"],
+    "reward": ["里程节点到了，选个稳的。", "十秒时间，够你读完半行报错。"],
+    "stage": ["新阶段，机柜的灯闪得更密了。"]
+  }
+}

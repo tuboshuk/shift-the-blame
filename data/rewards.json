@@ -1,0 +1,92 @@
+[
+  {
+    "id": "score_x2_20",
+    "category": "score",
+    "label": "分数 ×2",
+    "desc": "20 秒内通过得分翻倍",
+    "effect": { "kind": "timed", "key": "scoreMul", "value": 2, "durationMs": 20000 }
+  },
+  {
+    "id": "score_x3_15",
+    "category": "score",
+    "label": "分数 ×3",
+    "desc": "15 秒内通过得分 ×3",
+    "effect": { "kind": "timed", "key": "scoreMul", "value": 3, "durationMs": 15000 }
+  },
+  {
+    "id": "score_x5_risk",
+    "category": "score",
+    "label": "分数 ×5（高风险）",
+    "desc": "15 秒得分 ×5，但速度 +15%",
+    "effect": {
+      "kind": "timed", "key": "scoreMul", "value": 5, "durationMs": 15000,
+      "also": [{ "kind": "timed", "key": "speedMul", "value": 1.15, "durationMs": 15000 }]
+    }
+  },
+  {
+    "id": "shield",
+    "category": "survivor",
+    "label": "获得护盾",
+    "desc": "下一次错形态碰撞由护盾抵消",
+    "effect": { "kind": "modifier", "key": "shieldCharges", "value": 1, "maxStacks": 3 }
+  },
+  {
+    "id": "death_save",
+    "category": "survivor",
+    "label": "失误免死一次",
+    "desc": "致命一击时免死并保留 1 颗心",
+    "effect": { "kind": "modifier", "key": "deathSave", "value": 1, "maxStacks": 2 }
+  },
+  {
+    "id": "iron_skin",
+    "category": "survivor",
+    "label": "坚韧皮肤",
+    "desc": "15 秒内受伤后的无敌时间延长",
+    "effect": { "kind": "timed", "key": "invulnExtend", "value": 1100, "durationMs": 15000 }
+  },
+  {
+    "id": "slow_down",
+    "category": "comfort",
+    "label": "短暂降速",
+    "desc": "15 秒内整体速度 -10%",
+    "effect": { "kind": "timed", "key": "speedMul", "value": 0.9, "durationMs": 15000 }
+  },
+  {
+    "id": "sparse",
+    "category": "comfort",
+    "label": "障碍稀疏",
+    "desc": "15 秒内障碍生成间隔拉长 40%",
+    "effect": { "kind": "timed", "key": "spawnMul", "value": 1.4, "durationMs": 15000 }
+  },
+  {
+    "id": "switch_grace",
+    "category": "comfort",
+    "label": "切换容错",
+    "desc": "18 秒内每次切换形态有 0.5 秒免伤窗口",
+    "effect": { "kind": "timed", "key": "switchGrace", "value": 0.5, "durationMs": 18000 }
+  },
+  {
+    "id": "dash_cooldown",
+    "category": "form",
+    "label": "冲刺冷却缩短",
+    "desc": "形态切换冷却 180ms → 110ms",
+    "effect": { "kind": "flag", "key": "dashCooldownReduce" }
+  },
+  {
+    "id": "phase_plus_1s",
+    "category": "form",
+    "label": "相位时间 +1s",
+    "desc": "切入相位后的容错无敌延长 1 秒",
+    "effect": { "kind": "modifier", "key": "phaseGrace", "value": 1, "maxStacks": 2 }
+  },
+  {
+    "id": "smash_range",
+    "category": "form",
+    "label": "重击范围扩大",
+    "desc": "重击容错窗口 +0.5 秒，重击得分 +30%",
+    "effect": {
+      "kind": "modifier", "key": "smashGrace", "value": 0.5, "maxStacks": 1,
+      "also": [{ "kind": "modifier", "key": "smashScoreMul", "value": 0.3, "maxStacks": 3 }]
+    }
+  }
+]

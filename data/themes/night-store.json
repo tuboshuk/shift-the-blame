@@ -1,0 +1,30 @@
+{
+  "themeId": "night_store",
+  "displayName": "便利店夜班世界",
+  "uiSkin": "warm_beige",
+  "unlock": { "distance": 800 },
+  "world": {
+    "scene": "货架、冷柜、收银台、夜间灯光、神秘顾客",
+    "bgLayers": ["shelf", "fridge", "night_lamp"]
+  },
+  "palette": {
+    "bg0": "#e6ddcb",
+    "bg1": "#efe7d6",
+    "ground": "#d9cdb4",
+    "primary": "#d9b45c",
+    "danger": "#dd865e"
+  },
+  "obstaclePool": [
+    { "id": "shopping_basket", "name": "翻倒购物篮", "needState": "smash", "score": 10, "glyph": "篮" },
+    { "id": "runaway_bread", "name": "乱跑面包", "needState": "dash", "score": 13, "glyph": "包" },
+    { "id": "auto_door", "name": "失控自动门", "needState": "phase", "score": 12, "glyph": "门" },
+    { "id": "drink_spill", "name": "滑倒饮料渍", "needState": "phase", "score": 11, "glyph": "渍" }
+  ],
+  "banter": {
+    "runStart": ["夜班开始，工资不够赔的那种。", "监控红灯亮了，假装没看见。"],
+    "hit": ["这个月时薪又白干了。", "店长：我都看在眼里。"],
+    "milestone": ["货架还没倒，今晚有惊无险。", "又撑过一段，补货箱都佩服你。"],
+    "reward": ["休息点到了，选个夜班绝活。", "十秒选择，比扫码结账还慢。"],
+    "stage": ["新阶段，冷柜的灯又暗了一档。"]
+  }
+}

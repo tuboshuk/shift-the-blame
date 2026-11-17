@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHIFT the Blame · 形态奔跑</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 游戏容器禁止文本选择，避免 Shift 触发系统选择行为 -->
+  <div id="app" data-skin="calm_green">
+    <div id="screen-menu" class="screen"></div>
+    <div id="screen-editor" class="screen hidden"></div>
+    <div id="screen-game" class="screen hidden">
+      <canvas id="game-canvas"></canvas>
+      <div id="hud-layer"></div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
